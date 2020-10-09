@@ -226,6 +226,8 @@ namespace Simple1DFEM
                 elems.Add(elem);
                 lineNo++;
             }
+
+            fs.Close();
         }
     }
 }

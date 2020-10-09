@@ -18,22 +18,10 @@
                 <ScaleTransform ScaleY="-1"/>
             </Canvas.RenderTransform>
         </Canvas>
-        <TabControl Grid.Column="1">
-            <TabItem Header="メニュー">
-                <StackPanel Grid.Column="1" Margin="10">
-                    <Button Content="ファイル読み込み" Height="40" Margin="2" Click="FileOpenClicked"/>
-                    <Button Content="解析開始" Height="40" Margin="2" Click="AnalysisClicked"/>
-                    <Button Content="クリア" Height="40" Margin="2" Click="ClearClicked"/>
-                </StackPanel>
-            </TabItem>
-            <TabItem Header="サンプル">
-                <StackPanel Grid.Column="1" Margin="10">
-                    <Button Content="6章サンプル" Height="40" Margin="2" Click="Example1Clicked"/>
-                    <Button Content="課題6.2" Height="40" Margin="2" Click="Example2Clicked"/>
-                    <Button Content="解析開始" Height="40" Margin="2" Click="SampleAnalysisClicked"/>
-                    <Button Content="クリア" Height="40" Margin="2" Click="ClearClicked"/>
-                </StackPanel>
-            </TabItem>
-        </TabControl>
+        <StackPanel Grid.Column="1" Margin="10">
+            <Button Content="ファイル読み込み" Height="40" Margin="2" Click="FileOpenClicked"/>
+            <Button Content="解析開始" Height="40" Margin="2" Click="AnalysisClicked"/>
+            <Button Content="クリア" Height="40" Margin="2" Click="ClearClicked"/>
+        </StackPanel>
     </Grid>
 </Window>
