@@ -1,0 +1,39 @@
+﻿<Window x:Class="Simple1DFEM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Simple1DFEM"
+        mc:Ignorable="d"
+        Title="1次元ビーム要素のFEM解析のサンプル" Height="800" Width="1200">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Canvas x:Name="Canvas" Grid.Column="0" Background="LightGray" Margin="50"
+                RenderTransformOrigin="0.5,0.5">
+            <Canvas.RenderTransform>
+                <ScaleTransform ScaleY="-1"/>
+            </Canvas.RenderTransform>
+        </Canvas>
+        <TabControl Grid.Column="1">
+            <TabItem Header="メニュー">
+                <StackPanel Grid.Column="1" Margin="10">
+                    <Button Content="ファイル読み込み" Height="40" Margin="2" Click="FileOpenClicked"/>
+                    <Button Content="解析開始" Height="40" Margin="2" Click="AnalysisClicked"/>
+                    <Button Content="クリア" Height="40" Margin="2" Click="ClearClicked"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="サンプル">
+                <StackPanel Grid.Column="1" Margin="10">
+                    <Button Content="6章サンプル" Height="40" Margin="2" Click="Example1Clicked"/>
+                    <Button Content="課題6.2" Height="40" Margin="2" Click="Example2Clicked"/>
+                    <Button Content="解析開始" Height="40" Margin="2" Click="SampleAnalysisClicked"/>
+                    <Button Content="クリア" Height="40" Margin="2" Click="ClearClicked"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

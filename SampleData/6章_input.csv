@@ -1,0 +1,14 @@
+çﬁóø,,,,
+Material,Young[Mpa],Area[mm],,
+1,200000,50,,
+êﬂì_,,,,
+Node, Coordinate[mm], Constraint[mm], Displacement[mm], Force[N]
+1,0, True,0,0
+2,4, False,0,0
+3,8, False,0,0
+4,10, False,0,1000
+óvëf,,,,
+Element,Node1,Node2,Material,
+1,1,2,1,
+2,2,3,1,
+3,3,4,1,

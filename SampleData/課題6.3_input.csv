@@ -1,0 +1,19 @@
+çﬁóø,,,,
+Material,Young,Area,,
+1,200000,400,,
+2,150000,300,,
+3,100000,200,,
+4,100000,100,,
+êﬂì_,,,,
+Node, Coordinate, Constraint, Displacement, Force
+1,0, True,0,0
+2,150, False,0,0
+3,300, False,0,0
+4,400, False,0,0
+5,500, False,0,6000
+óvëf,,,,
+Element,Node1,Node2,Material,
+1,1,2,1,
+2,2,3,2,
+3,3,4,3,
+4,4,5,4,
